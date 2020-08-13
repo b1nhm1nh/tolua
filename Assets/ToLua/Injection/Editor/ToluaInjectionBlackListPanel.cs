@@ -107,7 +107,7 @@ public class InjectionBlackListGenerator : EditorWindow
         }
         else
         {
-            ShowNotification(new GUIContent("不能在Assets目录之外!"));
+            ShowNotification(new GUIContent("Cannot be outside the Assets directory!"));
         }
         return null;
     }
@@ -181,7 +181,7 @@ public class InjectionBlackListGenerator : EditorWindow
     {
         if (paths.Count == 0)
         {
-            EditorUtility.DisplayDialog("提示", "没有选中任何可跳过的路径", "确定");
+            EditorUtility.DisplayDialog("Prompt", "No skippable paths selected", "OK");
             return;
         }
         blackList.Clear();

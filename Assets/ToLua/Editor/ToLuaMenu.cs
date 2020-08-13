@@ -110,7 +110,7 @@ public static class ToLuaMenu
 
         if (files.Length < 3 && beCheck)
         {
-            if (EditorUtility.DisplayDialog("自动生成", "点击确定自动生成常用类型注册文件， 也可通过菜单逐步完成此功能", "确定", "取消"))
+            if (EditorUtility.DisplayDialog("Automatic generate", "Click OK to automatically generate registration files for common types, or you can complete this function step by step through the menu.", "OK", "Cancel"))
             {
                 beAutoGen = true;
                 GenLuaDelegates();
@@ -343,7 +343,7 @@ public static class ToLuaMenu
     {
         if (!beAutoGen && EditorApplication.isCompiling)
         {
-            EditorUtility.DisplayDialog("警告", "请等待编辑器完成编译再执行此功能", "确定");
+            EditorUtility.DisplayDialog("Warning", "Please wait for the editor to finish compiling before executing this function", "OK");
             return;
         }
 
@@ -457,7 +457,7 @@ public static class ToLuaMenu
     {
         if (!beAutoGen && EditorApplication.isCompiling)
         {
-            EditorUtility.DisplayDialog("警告", "请等待编辑器完成编译再执行此功能", "确定");
+            EditorUtility.DisplayDialog("Warning", "Please wait for the editor to finish compiling before executing this function", "OK");
             return;
         }
 
@@ -605,7 +605,7 @@ public static class ToLuaMenu
     {
         if (!beAutoGen && EditorApplication.isCompiling)
         {
-            EditorUtility.DisplayDialog("警告", "请等待编辑器完成编译再执行此功能", "确定");
+            EditorUtility.DisplayDialog("Warning", "Please wait for the editor to finish compiling before executing this function", "OK");
             return;
         }
 
@@ -884,7 +884,7 @@ public static class ToLuaMenu
     {
         if (EditorApplication.isCompiling)
         {
-            EditorUtility.DisplayDialog("警告", "请等待编辑器完成编译再执行此功能", "确定");
+            EditorUtility.DisplayDialog("Warning", "Please wait for the editor to finish compiling before executing this function", "OK");
             return;
         }
 
@@ -900,7 +900,7 @@ public static class ToLuaMenu
     {
         if (EditorApplication.isCompiling)
         {
-            EditorUtility.DisplayDialog("警告", "请等待编辑器完成编译再执行此功能", "确定");
+            EditorUtility.DisplayDialog("Warning", "Please wait for the editor to finish compiling before executing this function", "OK");
             return;
         }
 
@@ -1229,7 +1229,7 @@ public static class ToLuaMenu
     {
         if (!beAutoGen && EditorApplication.isCompiling)
         {
-            EditorUtility.DisplayDialog("警告", "请等待编辑器完成编译再执行此功能", "确定");
+            EditorUtility.DisplayDialog("Warning", "Please wait for the editor to finish compiling before executing this function", "OK");
             return;
         }
 
@@ -1336,7 +1336,7 @@ public static class ToLuaMenu
     {
         if (Application.isPlaying)
         {
-            EditorUtility.DisplayDialog("警告", "游戏运行过程中无法操作", "确定");
+            EditorUtility.DisplayDialog("Warning", "Cannot operate while the game is running", "OK");
             return;
         }
 
